@@ -1,3 +1,5 @@
+package New_WordCount;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -7,17 +9,9 @@ import java.util.Vector;
 public class calc {
 
 
-//    public static void main(String[] args) {
-//        Vector<String> teststr;
-//        teststr=new Vector<String>();
-//        for(int a=0;a<8;a++){
-//            teststr.addElement("a");
-//        }
-//        teststr.addElement("0");
-//        teststr.addElement("1");
-//
-//        printData(account(teststr));
-//
+//    public static void main(String[] args) throws IOException {
+//        Vector<String> words=Input.InputManage(args);
+//        printData(account(words));
 //    }
 
 
@@ -42,10 +36,10 @@ public class calc {
 
     }
     //打印一下hashmap中的数据
-//    public static void  printData(Map<String , Integer>data) {
+//    public static void  printData(Map<String , Integer> data) {
 //        Set<Entry<String, Integer>> entrys=data.entrySet();
 //        for (Entry<String, Integer> entry : entrys) {//通过增强for循环遍历输出
-//            System.out.println(entry.getKey()+"出现的次数为"+entry.getValue());
+//            System.out.println(entry.getKey()+"\t"+entry.getValue());
 //        }
 //    }
 }
