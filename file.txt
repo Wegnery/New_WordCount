@@ -1,0 +1,22 @@
+software is is very good.let's learn it!
+#int a=2,b=3;
+public static void main(String[] args) throws Exception 
+	{
+		Vector<String> words = Input.InputManage(args);
+		int num = words.size();
+		if (num == 0)
+		{
+			System.out.println("\n文件中无单词");
+		}
+		else
+		{
+			//进行下面的操作
+		}
+	}
+table1-3
+---------
+
+
+
+
+
