@@ -54,6 +54,7 @@ public class Input
 			//文件内容以行为单位提取单词
 			while((line = br.readLine()) != null)
 			{
+				line = line.toLowerCase();//大写转换成小写
 		        String regex = "[A-Za-z]+-?[A-Za-z]+|[A-Za-z]";//提取含-或者不含的单词的正则表达式
 		        Pattern  pattern=Pattern.compile(regex);//将正则表达式转为pattern
 		        Matcher  ma=pattern.matcher(line);//与每行文本进行匹配

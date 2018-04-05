@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.Vector;
 
 public class calc {
@@ -19,9 +20,9 @@ public class calc {
 
 
 //class AccountUtil{
-    public static Map<String , Integer>account(Vector<String> strs) {
+    public static TreeMap<String , Integer>account(Vector<String> strs) {
 //产生一个容器
-        Map<String , Integer>data=new HashMap<String ,Integer>();
+        TreeMap<String , Integer>data=new TreeMap<String ,Integer>();
         for (int i = 0; i < strs.size(); i++) {//通过下标来取出字符串中的一个个元素
             String str=strs.get(i);//先把第一个字符串取出来
 //判断一下hashmap中的key有没有，如果没有则收录 hashmap中
