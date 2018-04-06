@@ -8,7 +8,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.Vector;
 import java.util.Map.Entry;
 
@@ -25,16 +24,15 @@ public class wcMain {
 	else
 	{
 		//进行下面的操作
-		ArrayList<Entry<String, Integer>>  list=output.printData((TreeMap<String, Integer>) calc.account(words));
-		//output.print((TreeMap<String, Integer>) calc.account(words));
-	    File writename = new File("result.txt"); // 相对路径，如果没有则要建立一个新的output.txt文件
-  	    writename.createNewFile(); // 创建新文件  
-  	   	BufferedWriter out = new BufferedWriter(new FileWriter(writename,true));
+		ArrayList<Entry<String, Integer>>  list=output.printData(calc.account(words));
+	   File writename = new File("result.txt"); // 相对路径，如果没有则要建立一个新的output.txt文件
+  	writename.createNewFile(); // 创建新文件  
+      BufferedWriter out = new BufferedWriter(new FileWriter(writename));
 		//p.print(output.printData(calc.account(words)));
         Date day=new Date();    
 		SimpleDateFormat df = new SimpleDateFormat("-------------------------执行日期：yyyy-MM-dd HH:mm:ss\r\n"); //加入执行时间记录
 		for (Map.Entry<String,Integer> entry1 :list) {
-			out.write(entry1.getKey() + " " + entry1.getValue()+"\r\n");//将排序后的关键字与对应值写入文档
+			out.write(entry1.getKey() + ":" + entry1.getValue()+"\r\n");  
 			}    
 		out.write(df.format(day));
 		out.flush(); // 把缓存区内容压入文件  

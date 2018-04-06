@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 	3、IOException含有‘系统找不到文件’提示，故未写	
 	4、对文件中有无单词的判断写在main函数里，建议：
 	
-		public static void main(String[] args) throws Exception 
+	public static void main(String[] args) throws Exception 
 	{
 		Vector<String> words = Input.InputManage(args);
 		int num = words.size();
@@ -69,7 +69,8 @@ public class Input
 		}
 		else
 		{
-			System.out.println("输入的不是txt文件，请重新输入");
+			System.out.println("输入的不是txt文件");
+			System.exit(1);
 		}
 		return words;//返回单词向量
 	}
