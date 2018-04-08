@@ -7,7 +7,11 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.Map.Entry;
 
+<<<<<<< HEAD
 public class Output {
+=======
+public class output {
+>>>>>>> parent of 6497901... 基础功能完成，宁宁：核心模块，周雨贝：输入模块，易成龙：main 模块和整体架构，朱全：输出模块
 		public  static  ArrayList printData(TreeMap<String , Integer>data) throws IOException {
 		// TODO 自动生成的方法存根
 		/*利用Map的Comparator函数对关键字的值value进行排序并输出*/
@@ -25,3 +29,19 @@ public class Output {
 		return list;
 		}
 }				
+<<<<<<< HEAD
+=======
+//		public static void print(TreeMap<String , Integer>data) throws IOException{
+//			ArrayList<Entry<String, Integer>> list	=printData(data);
+//			/*默认情况下，TreeMap对key进行升序排序*/
+//			System.out.println("------------升序排序如下------------------");
+//			for (Map.Entry<String,Integer> entry1 :list) {
+//			System.out.println(entry1.getKey() + " " + entry1.getValue()+"\n");
+//			}
+//		}
+//	public static void main(String[] args) throws IOException {
+//		Vector<String> words=Input.InputManage(args);
+//		printData((TreeMap<String, Integer>) calc.account(words));
+//	}
+//}
+>>>>>>> parent of 6497901... 基础功能完成，宁宁：核心模块，周雨贝：输入模块，易成龙：main 模块和整体架构，朱全：输出模块

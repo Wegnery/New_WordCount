@@ -3,10 +3,13 @@
 	<classpathentry kind="src" path="src"/>
 <<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 =======
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 >>>>>>> 3f1b63edbe35cf177ff860806ac0863c974b67b5
+=======
+>>>>>>> parent of 6497901... 基础功能完成，宁宁：核心模块，周雨贝：输入模块，易成龙：main 模块和整体架构，朱全：输出模块
 	<classpathentry kind="output" path="bin"/>
 </classpath>
