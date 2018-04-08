@@ -7,6 +7,7 @@ import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+<<<<<<< HEAD
 /*
 	1、输入参数为main函数的String[] args，即命令行中输入的文件名
 	2、编译环境运行时文件需放在项目文件夹根目录下，命令行运行时文件需放在跟exe文件同目录下
@@ -30,6 +31,8 @@ import java.util.regex.Pattern;
 */
 	
 
+=======
+>>>>>>> 3f1b63edbe35cf177ff860806ac0863c974b67b5
 public class Input 
 {
 	public static Vector<String> InputManage(String[] args) throws IOException
